@@ -12,7 +12,7 @@ const script = [
 ]
 
 const pods = [
-  ['nyu-ms-cs', 'Running', 'until May 2026'],
+  ['nyu-ms-cs', 'Completed', '2026'],
   ['simplian-menu-svc', 'Completed', '2025'],
   ['citi-api-framework', 'Completed', '2023–24'],
   ['rbs-kpi-dashboard', 'Completed', '2022'],

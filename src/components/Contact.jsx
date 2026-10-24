@@ -10,8 +10,8 @@ export default function Contact() {
         <Reveal className="contact-copy">
           <h2 id="contact-h">Get in touch</h2>
           <p>
-            I'm looking for full-time backend, platform or cloud engineering roles starting in May
-            2026. The quickest way to reach me is email.
+            I'm looking for full-time backend, platform or cloud engineering roles. The quickest way
+            to reach me is email.
           </p>
           <ul className="contact-list">
             <li>

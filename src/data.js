@@ -6,13 +6,13 @@ export const person = {
   title: 'Software Development Engineer',
   focus: 'Backend & distributed systems',
   city: 'Brooklyn, NY',
-  email: 'shiburajlakshmi@gmail.com',
+  email: 'ls6588@nyu.edu',
   phone: '(347) 671-9120',
   phoneHref: 'tel:+13476719120',
   linkedin: 'https://www.linkedin.com/in/lakshmi-shibu-raj-1149661b2/',
   github: 'https://github.com/lakshmisraj',
   resume: '/Lakshmi-Shibu-Raj-Resume.pdf',
-  availability: 'Open to full-time roles from May 2026',
+  availability: 'Open to full-time roles',
 }
 
 export const intro =
@@ -28,7 +28,7 @@ export const about = [
 export const facts = [
   ['Based in', 'Brooklyn, NY'],
   ['Education', 'MS Computer Science, New York University'],
-  ['Graduating', 'May 2026'],
+  ['Graduated', 'May 2026'],
   ['Focus', 'Backend & distributed systems'],
 ]
 
