@@ -23,6 +23,7 @@ export default function Nav() {
     const prev = scrollY.getPrevious() ?? 0
     setHidden(y > prev && y > 280 && !open)
     setSolid(y > 24)
+    if (y < 300) setActive('')
   })
 
   useEffect(() => {
@@ -44,8 +45,8 @@ export default function Nav() {
       transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="nav-inner">
-        <a href="#top" className="nav-mark" aria-label={`${person.name}, back to top`}>
-          <span aria-hidden="true">LSR</span>
+        <a href="#top" className="nav-mark">
+          {person.name}
         </a>
         <nav className="nav-links" aria-label="Main">
           {links.map(([label, id]) => (

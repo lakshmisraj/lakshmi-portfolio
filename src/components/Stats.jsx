@@ -8,7 +8,7 @@ export default function Stats() {
       <ul className="container stats-row">
         {stats.map((s) => (
           <li key={s.label}>
-            <Count {...s} />
+            {s.display ? <p className="stat-num">{s.display}</p> : <Count {...s} />}
             <p>{s.label}</p>
           </li>
         ))}
@@ -28,7 +28,7 @@ function Count({ value, decimals = 0, suffix = '' }) {
   useEffect(() => {
     if (!inView || reduced) return
     const c = animate(from, value, {
-      duration: 1.6,
+      duration: 1.4,
       ease: [0.16, 1, 0.3, 1],
       onUpdate: (v) => setShown(v),
     })

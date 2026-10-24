@@ -1,8 +1,8 @@
-# Lakshmi Shibu Raj — portfolio
+# Lakshmi Shibu Raj, portfolio
 
-A one-page portfolio for a software development engineer (backend and distributed systems): hero with a live terminal, impact numbers, about, experience timeline, projects, skills, education and a contact form.
+A one-page portfolio for a software development engineer (backend and distributed systems): hero with a terminal, impact numbers, about, experience, projects, skills, education and a contact form.
 
-Built with Vite, React 19, Motion (animations) and react-icons. Fonts: Space Grotesk, IBM Plex Sans and IBM Plex Mono (Google Fonts).
+Built with Vite, React 19, Motion and react-icons. Fonts: IBM Plex Sans and IBM Plex Mono.
 
 ## Run it
 

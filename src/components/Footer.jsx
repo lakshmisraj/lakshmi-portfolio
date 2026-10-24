@@ -5,9 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <p>
-          © 2026 {person.name}. Built with React and Motion.
-        </p>
+        <p>© 2026 {person.name}</p>
         <ul className="footer-links">
           <li>
             <a href={person.github} target="_blank" rel="noreferrer" aria-label="GitHub">

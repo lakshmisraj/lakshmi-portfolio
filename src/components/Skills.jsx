@@ -1,11 +1,13 @@
 import { FaAws, FaJava } from 'react-icons/fa6'
 import {
+  SiApachemaven,
+  SiApachetomcat,
   SiCplusplus,
+  SiCss,
   SiDjango,
   SiDocker,
   SiGit,
-  SiApachemaven,
-  SiApachetomcat,
+  SiHtml5,
   SiJavascript,
   SiKeras,
   SiKubernetes,
@@ -15,9 +17,7 @@ import {
   SiNodedotjs,
   SiNumpy,
   SiOpencv,
-  SiOpensearch,
   SiPandas,
-  SiPrometheus,
   SiPython,
   SiPytorch,
   SiReact,
@@ -32,6 +32,10 @@ import Reveal, { SectionHead } from './Reveal'
 
 const icons = {
   java: FaJava,
+  python: SiPython,
+  cpp: SiCplusplus,
+  sql: TbSql,
+  js: SiJavascript,
   spring: SiSpringboot,
   api: TbApi,
   node: SiNodedotjs,
@@ -42,18 +46,11 @@ const icons = {
   k8s: SiKubernetes,
   docker: SiDocker,
   linux: SiLinux,
-  cicd: TbInfinity,
   git: SiGit,
-  prometheus: SiPrometheus,
+  cicd: TbInfinity,
   mongo: SiMongodb,
   mysql: SiMysql,
   redis: SiRedis,
-  opensearch: SiOpensearch,
-  python: SiPython,
-  cpp: SiCplusplus,
-  sql: TbSql,
-  js: SiJavascript,
-  react: SiReact,
   pytorch: SiPytorch,
   tensorflow: SiTensorflow,
   keras: SiKeras,
@@ -61,20 +58,19 @@ const icons = {
   opencv: SiOpencv,
   numpy: SiNumpy,
   pandas: SiPandas,
+  react: SiReact,
+  html: SiHtml5,
+  css: SiCss,
 }
 
 export default function Skills() {
   return (
     <section className="section" aria-labelledby="skills-h" id="skills">
       <div className="container">
-        <SectionHead
-          id="skills-h"
-          title="Skills"
-          lede="The tools I reach for, grouped by where they sit in a system."
-        />
-        <div className="skills">
-          {skills.map((g, gi) => (
-            <Reveal key={g.group} className="skill-group" delay={(gi % 3) * 0.06}>
+        <SectionHead id="skills-h" title="Skills" />
+        <Reveal className="skills">
+          {skills.map((g) => (
+            <div className="skill-row" key={g.group}>
               <h3>{g.group}</h3>
               <ul>
                 {g.items.map(([name, icon]) => {
@@ -87,19 +83,17 @@ export default function Skills() {
                   )
                 })}
               </ul>
-            </Reveal>
+            </div>
           ))}
-          <Reveal className="skill-group skill-aws" delay={0.12}>
-            <h3>
-              <FaAws aria-hidden="true" /> AWS services I've built with
-            </h3>
+          <div className="skill-row">
+            <h3>AWS services</h3>
             <ul>
               {awsServices.map((s) => (
                 <li key={s}>{s}</li>
               ))}
             </ul>
-          </Reveal>
-        </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )

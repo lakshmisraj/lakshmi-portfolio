@@ -20,9 +20,8 @@ const pods = [
 
 const impact = [
   ['uptime', '"99.98%"'],
-  ['p_latency_change', '"-18%"'],
   ['daily_failures_fixed', '10'],
-  ['services_refactored', '15'],
+  ['staff_hours_saved_per_week', '200'],
 ]
 
 export default function Terminal() {
@@ -55,7 +54,8 @@ export default function Terminal() {
   const current = step < script.length && script[step].cmd ? script[step] : null
 
   return (
-    <div className="terminal" role="img" aria-label="Terminal showing Lakshmi's education and roles as running services, and her impact at Citi: 99.98% uptime and 18% lower latency.">
+    <div className="terminal" role="img" aria-label="Terminal showing Lakshmi's education and roles as services, and her impact at Citi: 99.98% uptime, 10 daily failures fixed and 200 staff hours saved a week.">
+
       <div className="terminal-bar" aria-hidden="true">
         <span />
         <span />

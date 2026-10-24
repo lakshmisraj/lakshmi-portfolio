@@ -1,26 +1,26 @@
-import { FaGraduationCap } from 'react-icons/fa6'
 import { education } from '../data'
 import Reveal, { SectionHead } from './Reveal'
 
 export default function Education() {
   return (
-    <section className="section section-tight" aria-labelledby="edu-h" id="education">
+    <section className="section" aria-labelledby="edu-h" id="education">
       <div className="container">
         <SectionHead id="edu-h" title="Education" />
-        <div className="education">
-          {education.map((e, i) => (
-            <Reveal key={e.school} className="school" delay={i * 0.08}>
-              <FaGraduationCap className="school-icon" aria-hidden="true" />
-              <div>
+        <ul className="jobs">
+          {education.map((e) => (
+            <Reveal as="li" key={e.school} className="job">
+              <div className="job-meta">
+                <p>{e.dates}</p>
+                <p>{e.place}</p>
+              </div>
+              <div className="job-main">
                 <h3>{e.degree}</h3>
-                <p className="school-name">{e.school}</p>
-                <p className="school-meta">
-                  {e.dates}, {e.detail}
-                </p>
+                <p className="job-company">{e.school}</p>
+                <p className="edu-detail">{e.detail}</p>
               </div>
             </Reveal>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   )

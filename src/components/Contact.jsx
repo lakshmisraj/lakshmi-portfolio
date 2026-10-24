@@ -8,10 +8,10 @@ export default function Contact() {
     <section className="section contact" aria-labelledby="contact-h" id="contact">
       <div className="container contact-layout">
         <Reveal className="contact-copy">
-          <h2 id="contact-h">Let's talk</h2>
+          <h2 id="contact-h">Get in touch</h2>
           <p>
-            I'm looking for full-time backend, platform or cloud engineering roles starting May
-            2026. Send a note and I'll get back to you.
+            I'm looking for full-time backend, platform or cloud engineering roles starting in May
+            2026. The quickest way to reach me is email.
           </p>
           <ul className="contact-list">
             <li>
@@ -29,13 +29,13 @@ export default function Contact() {
             <li>
               <FaLinkedin aria-hidden="true" />
               <a href={person.linkedin} target="_blank" rel="noreferrer">
-                LinkedIn
+                linkedin.com/in/lakshmi-shibu-raj
               </a>
             </li>
             <li>
               <FaGithub aria-hidden="true" />
               <a href={person.github} target="_blank" rel="noreferrer">
-                GitHub
+                github.com/lakshmisraj
               </a>
             </li>
           </ul>
@@ -44,7 +44,7 @@ export default function Contact() {
             Download résumé
           </a>
         </Reveal>
-        <Reveal className="contact-card" delay={0.1}>
+        <Reveal className="contact-card" delay={0.08}>
           <ContactForm />
         </Reveal>
       </div>
