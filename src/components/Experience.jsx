@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section className="section" aria-labelledby="exp-h" id="experience">
       <div className="container">
-        <SectionHead id="exp-h" title="Experience" />
+        <SectionHead id="exp-h" title="Professional Experience" />
         <ol className="jobs">
           {experience.map((job) => (
             <Reveal as="li" key={job.company} className="job">

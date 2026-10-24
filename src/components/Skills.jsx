@@ -27,7 +27,7 @@ import {
   SiTensorflow,
 } from 'react-icons/si'
 import { TbApi, TbInfinity, TbSql } from 'react-icons/tb'
-import { awsServices, skills } from '../data'
+import { competencies, skills } from '../data'
 import Reveal, { SectionHead } from './Reveal'
 
 const icons = {
@@ -67,7 +67,7 @@ export default function Skills() {
   return (
     <section className="section" aria-labelledby="skills-h" id="skills">
       <div className="container">
-        <SectionHead id="skills-h" title="Skills" />
+        <SectionHead id="skills-h" title="Technical Skills" />
         <Reveal className="skills">
           {skills.map((g) => (
             <div className="skill-row" key={g.group}>
@@ -86,10 +86,10 @@ export default function Skills() {
             </div>
           ))}
           <div className="skill-row">
-            <h3>AWS services</h3>
-            <ul>
-              {awsServices.map((s) => (
-                <li key={s}>{s}</li>
+            <h3>Core Competencies</h3>
+            <ul className="competencies">
+              {competencies.map((c) => (
+                <li key={c}>{c}</li>
               ))}
             </ul>
           </div>

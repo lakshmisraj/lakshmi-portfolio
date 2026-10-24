@@ -500,19 +500,20 @@ a {
 .project-body > p:not(.project-kind) {
   color: var(--muted);
 }
-.project-results {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 18px;
-  font-size: var(--text-sm);
-}
-.project-results li {
-  display: inline-flex;
-  align-items: center;
+.project-points {
+  display: grid;
   gap: 8px;
+  color: var(--muted);
 }
-.project-results li::before {
+.project-points li {
+  position: relative;
+  padding-left: 16px;
+}
+.project-points li::before {
   content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -624,6 +625,15 @@ a {
 .skill-row li svg {
   font-size: 1.05rem;
   color: var(--violet);
+}
+.competencies {
+  gap: 8px !important;
+}
+.competencies li {
+  padding: 4px 11px;
+  border-radius: 6px;
+  background: var(--surface-2);
+  font-size: var(--text-sm);
 }
 
 /* ---------- contact ---------- */

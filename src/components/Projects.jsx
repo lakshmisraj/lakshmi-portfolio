@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section className="section" aria-labelledby="proj-h" id="projects">
       <div className="container">
-        <SectionHead id="proj-h" title="Projects" />
+        <SectionHead id="proj-h" title="Project Experience" />
         <div className="projects">
           {projects.map((p, i) => (
             <Reveal key={p.name} delay={(i % 2) * 0.06}>
@@ -15,10 +15,9 @@ export default function Projects() {
                 <div className="project-body">
                   <h3>{p.name}</h3>
                   <p className="project-kind">{p.kind}</p>
-                  <p>{p.summary}</p>
-                  <ul className="project-results">
-                    {p.results.map((r) => (
-                      <li key={r}>{r}</li>
+                  <ul className="project-points">
+                    {p.points.map((pt) => (
+                      <li key={pt}>{pt}</li>
                     ))}
                   </ul>
                   <ul className="chips" aria-label="Technologies">

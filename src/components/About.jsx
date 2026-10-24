@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="section" aria-labelledby="about-h" id="about">
       <div className="container">
-        <SectionHead id="about-h" title="About" />
+        <SectionHead id="about-h" title="Professional Overview" />
         <div className="about">
           <Reveal className="about-text">
             {about.map((p) => (
